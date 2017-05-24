@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">   
+  <!--<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Carousel Template for Bootstrap</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="index" id="button-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top bg-faded navbar-custom">
+      <div class="navbar-inner">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="glyphicon glyphicon-align-center" aria-hidden="true"></i>
+          </button>
+          <a class="brand pull-left" href="http://v4-alpha.getbootstrap.com/examples/carousel/#">Carousel</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#link">Link</a></li>
+            <li class="disabled"><a href="#disabled">Disabled</a></li>
+          </ul>
+          <form class="navbar-search default">
+            <input type="text" class="search-query" placeholder="Search">
+            <button type="submit" class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <header>
+    <!-- Карусель -->
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+      <!-- Индикаторы для карусели -->
+      <ol class="carousel-indicators">
+        <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>   
+      <!-- Слайды карусели -->
+      <div class="carousel-inner">
+        <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+        <div class="active item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="first-slide"> One more for good measure.</h1>
+              <p class="first-slide"> Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+              <button type="submit" class="btn btn btn-primary first-slide">Sign up today</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="second-slide"> Second slide label</h1>
+              <p class="second-slide"> Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+              <button type="submit" class="btn btn btn-primary second-slide">Sign up today</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="third-slide"> Third slide label</h1>
+              <p class="third-slide"> Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <button type="submit" class="btn btn btn-primary third-slide">Sign up today</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Навигация для карусели -->
+      <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    </header>
+    <section class="heading">
+      <div class="container text-center">
+        <div class="row">
+          <div class="block col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+            <div class="image image-1">
+            </div>
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <span>
+              <a href="#" role="button" class="btn btn-default">View details »</a>
+            </span>
+          </div>
+          <div class="block col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+            <div class="image image-2">
+            </div>
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <span>
+              <a href="#" role="button" class="btn btn-default">View details »</a>
+            </span>
+          </div>
+          <div class="block block-3 col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+            <div class="image image-3">
+            </div>
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <span>
+              <a href="#" role="button" class="btn btn-default">View details »</a>
+            </span>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <section class="featurette">
+      <div class="container">
+        <div class="row">
+          <div class="description pull-left col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <h2>First featurette heading. <span>It'll blow your mind.</span></h2>
+            <p> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="view view-1 col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <section class="featurette">
+      <div class="container">
+        <div class="row">
+          <div class="description pull-right col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <h2>Oh yeah, it's that good.<span>See for yourself.</span></h2>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="view view-2 col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <section class="featurette">
+      <div class="container">
+        <div class="row">
+          <div class="description pull-left col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <h2>And lastly, this one. <span>Checkmate.</span></h2>
+            <p> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="view view-3 col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+      <div class="copiright pull-left">
+        <p>© 2017 Company, Inc.
+        <span>&middot;</span>
+        <a href="http://v4-alpha.getbootstrap.com/examples/carousel/#">Privacy</a>
+        <span>&middot;</span>
+        <a href="http://v4-alpha.getbootstrap.com/examples/carousel/#">Terms</a>
+        <p>
+      </div>
+    </footer>
+    <div class="button-top">
+      <a class="btn btn-primary" href="#button-top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+    </div>
+    <!-- javascript goes here -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
+ 
